@@ -16,7 +16,7 @@ else
         rm -rf /usr/local/src/apachebooster*
         wget -c wget https://github.com/itseasy21/ApacheBooster/archive/master.zip -O ApacheBooster.zip
         unzip ApacheBooster.zip
-        cd apachebooster*
+        cd ApacheBooster*
         bash install.sh
         ps aux|grep varnish|awk '{print $2}'|xargs kill -9
         /etc/init.d/httpd restart
