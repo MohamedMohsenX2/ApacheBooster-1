@@ -1,8 +1,8 @@
 #!/bin/bash
 #Apachebooster 2.2 Installer
 
-nVERSION="1.4.4"
-vVERSION="3.0.4"
+nVERSION="1.6.2"
+vVERSION="4.0.1"
 pcreVERSION="8.33"
 CUDIR=`pwd`
 bin_mkdir=`which mkdir`
@@ -318,6 +318,8 @@ echo -e "$GREEN starting nginx installation $RESET"
                cd nginx-$nVERSION/
                ./configure --prefix=/usr/local/nginx/ \
                            --with-ipv6 \
+                           --with-http_spdy_module \
+                           --with-http_ssl_module \
                            --with-pcre=$CUDIR/packages/pcre-$pcreVERSION \
                            --with-http_realip_module  \
                            --with-http_mp4_module \
