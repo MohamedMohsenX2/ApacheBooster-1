@@ -37,7 +37,7 @@ fi
 clear
 echo -e "$GREEN          ************************************************************$RESET"
 echo -e "$GREEN          *$RESET$WHITE      ApacheBooster Installation V 2.2          $GREEN*$RESET"
-echo -e "$GREEN          *$RESET$WHITE   Copyright (c) 2012-2014  https://www.prajith.in/     $GREEN*$RESET"
+echo -e "$GREEN          *$RESET$WHITE   Copyright (c) 2012-2014  https://github.com/itseasy21/ApacheBooster     $GREEN*$RESET"
 echo -e "$GREEN          ************************************************************$RESET"
 echo " "
 echo " "
@@ -428,7 +428,7 @@ echo -e "$RESET$WHITE                     Installation Completed $GREEN.$RESET"
 echo -e "$RESET$WHITE            Please Go to WHM->PLUGIN->APACHEBOOSTER $GREEN.$RESET"
 echo -e "$RESET$WHITE             Please run the following command /etc/init.d/httpd restart $GREEN.$RESET"
 echo -e "$RESET$WHITE         Please feel free to contact us, if you need any help $GREEN.$RESET"
-echo -e "$RESET$WHITE                      EMAIL: prajithpalakkuda@gmail.com $GREEN.$RESET"
+echo -e "$RESET$WHITE                      SUPPORT: https://github.com/itseasy21/ApacheBooster $GREEN.$RESET"
 echo -e "$GREEN--------------------------------------------------------------------------------------$RESET"
 
 if [ "$ERROR" ]; then
