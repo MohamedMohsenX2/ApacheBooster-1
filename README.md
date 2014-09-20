@@ -1,6 +1,8 @@
 ApacheBooster
 =============
 
+NOTE: This is the only working version of ApacheBooster found on GitHub :D
+
 ApacheBooster is a integration of nginx and varnish, this Plugin will reduce the server load spike and memory usage. Also the plugin will provide the maximum performance of your websites.
 
 ####Varnish
