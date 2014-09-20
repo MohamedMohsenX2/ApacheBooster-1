@@ -1,4 +1,6 @@
 #!/bin/bash
+#Apachebooster 2.2 Installer
+
 nVERSION="1.4.4"
 vVERSION="3.0.4"
 pcreVERSION="8.33"
@@ -19,19 +21,29 @@ DGREEN='\033[01;32m'
 RESET='\033[0m'                                                                                                                                              
 clear
 
+#-Root access check
 if [ ! `id -u` = 0 ]; then
         echo
         echo "FAILED:::: You must login as root"
         exit 1;
 fi
 
+#-cPanel check
 echo -e  "Checking  cPanel installation.."
-
 if [   -d  "/usr/local/cpanel" ]; then
    echo -e "$GREEN cPanel YES $RESET"
 else
    echo -e "$RED cPanel  NO $RESET"
    exit 1
+fi
+
+#-Yum Check
+echo -ne "Checking for Yum .."
+if [ -e  "/etc/yum.conf" ]; then
+	echo -e "[ $GREEN Found $RESET ]"
+else
+	echo -e "[ $RED Not Found $RESET ]"
+	exit
 fi
  
 clear
