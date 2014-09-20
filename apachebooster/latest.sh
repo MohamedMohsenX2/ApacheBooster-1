@@ -1,8 +1,8 @@
 #!/bin/bash
 #Apachebooster 2.2 Installer
 
-nVERSION="1.4.4"
-vVERSION="3.0.4"
+nVERSION="1.6.2"
+vVERSION="4.0.1"
 pcreVERSION="8.33"
 CUDIR=`pwd`
 bin_mkdir=`which mkdir`
