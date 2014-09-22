@@ -1,8 +1,8 @@
 #!/bin/bash
 #Apachebooster 2.2 Installer
 
-nVERSION="1.4.4"
-vVERSION="3.0.4"
+nVERSION="1.6.2"
+vVERSION="3.0.5"
 pcreVERSION="8.33"
 CUDIR=`pwd`
 bin_mkdir=`which mkdir`
@@ -263,7 +263,7 @@ echo -e "$GREEN Installing scripts $RESET"
                chmod 700 scripts/* -R
                $bin_cp -prf  scripts/* /scripts/
                $bin_cp -prf  cgi/* /usr/local/cpanel/whostmgr/docroot/cgi/
-               wget -O /usr/local/cpanel/whostmgr/cgi/ApacheBooster/version.txt http://prajith.in/version.txt
+               wget -O /usr/local/cpanel/whostmgr/cgi/ApacheBooster/version.txt https://raw.githubusercontent.com/itseasy21/ApacheBooster/master/version.txt
                   ./latest_cpanel.sh
 
 else
@@ -277,7 +277,7 @@ echo -e "$GREEN Installing scripts $RESET"
                chmod 700 scripts/* -R
                $bin_cp -prf  scripts/* /scripts/
                $bin_cp -prf  cgi/* /usr/local/cpanel/whostmgr/docroot/cgi/
-               wget -O /usr/local/cpanel/whostmgr/cgi/ApacheBooster/version.txt http://prajith.in/version.txt
+               wget -O /usr/local/cpanel/whostmgr/cgi/ApacheBooster/version.txt https://raw.githubusercontent.com/itseasy21/ApacheBooster/master/version.txt
                  ./latest_cpanel.sh
 fi
 clear
