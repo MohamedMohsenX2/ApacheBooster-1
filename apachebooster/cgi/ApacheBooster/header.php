@@ -15,5 +15,5 @@ print('
 </div></div>
 </div>
 ');
-
+include("check.php");
 ?>
