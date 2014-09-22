@@ -306,6 +306,8 @@ echo -e "$GREEN startig nginx installation $RESET"
                tar -xf  pcre-$pcreVERSION.tar.gz
                cd nginx-$nVERSION/
                ./configure --prefix=/usr/local/nginx/ \
+						   --with-http_spdy_module \
+						   --with-http_ssl_module \
                            --with-ipv6 \
                            --with-pcre=$CUDIR/packages/pcre-$pcreVERSION \
                            --with-http_realip_module  \
