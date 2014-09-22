@@ -383,6 +383,7 @@ echo -e "$GREEN Creating cron $RESET"
 clear
 echo -e "$GREEN Building varnish configuration files $RESET"
              /scripts/genevarnishconf
+			 chmod +x /etc/init.d/varnish
              /etc/init.d/varnish restart
              /sbin/chkconfig varnish on
              clear
