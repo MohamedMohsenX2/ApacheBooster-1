@@ -6,8 +6,21 @@ define(FD_WRITE, 0);        # stdin
 define(FD_READ, 1);        # stdout
 define(FD_ERR, 2);        # stderr
 
-
-
+function sanitize($input) {
+ 
+  $search = array(
+    '@<script[^>]*?>.*?</script>@si',   // Strip out javascript
+    '@<[\/\!]*?[^<>]*?>@si',            // Strip out HTML tags
+    '@<style[^>]*?>.*?</style>@siU',    // Strip style tags properly
+    '@<![\s\S]*?--[ \t\n\r]*>@'         // Strip multi-line comments
+  );
+ 
+    $output = preg_replace($search, '', $input);
+    return $output;
+  }
+  //security measure 
+  $_POST = sanitize($_POST);
+  $_GET  = sanitize($_GET);
 
 function retrieve_current_ttl() {
 	tune_varnish("/scripts/getfilettl -f");

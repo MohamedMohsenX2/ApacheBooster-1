@@ -11,14 +11,14 @@ $LVERSION = `/bin/cat /usr/local/cpanel/whostmgr/cgi/ApacheBooster/version.txt`;
 <body>
 <div id="contentMain" class="contentPadding">
 <?php
-                          if ($LVERSION==$RVERSION)
-               echo "<div class=\"success\">
-<p>   Already uptodate </p></div>";
+                          if ($LVERSION==$RVERSION){
+               echo "<div class=\"success\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You are using the Latest version of ApacheBooster </div>";
                           
-                          else
+                          }else{
 echo "<div class=\"error\">
-                                Version $RVERSION is now available. Please reffer the  belw docs to upgrade.
+                                Version $RVERSION is now available. Please refer the below docs to upgrade.
                           </div>";
+						  }
                           ?>
 
 
@@ -30,14 +30,14 @@ echo "<div class=\"error\">
             <div id="welcomemessage">
         <p><pre>Please upgrade the ApacheBooster package only from Terminal. 
 You can simply upgrade it by running  predefined script: /scripts/updateapachebooster
-Gmail: prajithpalakkuda@gmail.com
-skype: prajithp80
+For Support please contact at <a href="https://github.com/itseasy21/" target="_blank">Github</a>
         </div>
         </div>
 
         </div>
 
-<?php include('footer.php');
+<?php 
+include('footer.php');
 ?>
     </div>
 
