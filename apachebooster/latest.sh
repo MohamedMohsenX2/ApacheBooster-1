@@ -2,7 +2,7 @@
 #Apachebooster 2.2 Installer
 
 nVERSION="1.6.2"
-vVERSION="4.0.0"
+vVERSION="3.0.5"
 pcreVERSION="8.33"
 CUDIR=`pwd`
 bin_mkdir=`which mkdir`
