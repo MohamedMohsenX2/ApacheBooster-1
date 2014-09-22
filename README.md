@@ -5,7 +5,7 @@ NOTE: This is the only working version of ApacheBooster found on GitHub :D
 
 Current Release: V2.3
 ````
-Nginx Version : 1.6.2
+Nginx Version : 1.6.0
 Varnish Version : 3.0.5
 ````
 
