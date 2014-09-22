@@ -404,6 +404,9 @@ echo -e "$GREEN switching to apachebooster $RESET"
                   sed -i 's/80/82/g' /etc/munin/plugins/apache_accesses /etc/munin/plugins/apache_processes /etc/munin/plugins/apache_volume
                   `which service` munin-node restart >/dev/null 2>&1
                fi
+			   if [ -f "/usr/local/cpanel/whostmgr/docroot/cgi/addon_ApacheBooster.cgi" ]; then
+				  chmod 700 /usr/local/cpanel/whostmgr/docroot/cgi/addon_ApacheBooster.cgi
+			   fi
                /scripts/installmod-rpf >/dev/null 2>&1
                /scripts/rebuildnginxconf
                /scripts/rebuildhttpdconf >/dev/null 2>&1
