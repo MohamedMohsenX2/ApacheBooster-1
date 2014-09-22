@@ -1,6 +1,6 @@
 #!/bin/bash
-nVERSION="1.4.4"
-vVERSION="3.0.4"
+nVERSION="1.6.2"
+vVERSION="3.0.5"
 pcreVERSION="8.33"
 CUDIR=`pwd`
 bin_mkdir=`which mkdir`
