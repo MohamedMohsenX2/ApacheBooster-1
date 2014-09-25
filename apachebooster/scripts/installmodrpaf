@@ -7,7 +7,7 @@
 CUDIR=`pwd`
 cd /usr/local/src
 rm -rf mod_rpaf*
-wget -c  https://github.com/itseasy21/ApacheBooster/downloads/mod_rpaf_patch.tar.gz
+wget -c  https://raw.githubusercontent.com/itseasy21/ApacheBooster/master/downloads/mod_rpaf_patch.tar.gz
 tar -xzf mod_rpaf_patch.tar.gz
 cd mod_rpaf
 /usr/local/apache/bin/apxs -cia mod_rpaf-2.0.c
