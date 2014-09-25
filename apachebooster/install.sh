@@ -171,7 +171,7 @@ echo -e "$GREEN Checking for previous installation .. $RESET"
       if [ -d  "/usr/local/cpanel/whostmgr/cgi/ApacheBooster" -o -f "/usr/local/cpanel/whostmgr/cgi/addon_nginx.cgi" ]; then
                echo -e "$GREEN ApacheBooster already installed $RESET"
 clear
-echo -e "$GREEN Removing olde version $RESET"
+echo -e "$GREEN Removing old version $RESET"
                /etc/init.d/varnish stop
                /etc/init.d/nginx stop
                if [ -f "/usr/local/cpanel/whostmgr/cgi/addon_ApacheBooster.cgi" ]; then
