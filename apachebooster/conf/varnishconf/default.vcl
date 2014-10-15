@@ -1,6 +1,6 @@
  
 ###############################################
-# Created by Prajith
+# Varnish Default Config
 # https://github.com/itseasy21/ApacheBooster
 #                                              
 ###############################################
@@ -104,7 +104,7 @@ return (lookup);
 sub vcl_fetch {
 
 set beresp.ttl = 45s;
-set beresp.http.Server = " - ApacheBooster by http://www.prajith.in";
+set beresp.http.Server = " - ApacheBooster by itseasy21";
 
 set beresp.do_gzip = true;
 set beresp.do_gunzip = false;
