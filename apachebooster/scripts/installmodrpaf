@@ -1,7 +1,6 @@
 #!/bin/bash
-# apachebooster - installmod-rpf                            Copyright(c) 2011 Ndimensionz, Inc.
-#                                                           All rights Reserved.
-# prajithpalakkuda@gmail.com                                       http://ndimensionz.com http://esupports.net
+# apachebooster - installmod-rpf                         
+# https://github.com/itseasy21/ApacheBooster
 # This code is subject to the GPL  license. Unauthorized copying is prohibited
 
 CUDIR=`pwd`

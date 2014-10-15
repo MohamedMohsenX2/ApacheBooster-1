@@ -1,7 +1,7 @@
 #!/bin/bash
-# apachebooster - updateapachebooster                            Copyright(c) 2011 Ndimensionz, Inc.
+# apachebooster - updateapachebooster                            
 #                                                           All rights Reserved.
-# prajithpalakkuda@gmail.com                                       http://ndimensionz.com http://esupports.net
+# https://github.com/itseasy21/ApacheBooster
 # This code is subject to the GPL  license. Unauthorized copying is prohibited
 
 export REMOTVERSION=$( /usr/bin/curl -s  https://raw.githubusercontent.com/itseasy21/ApacheBooster/master/version.txt )
@@ -9,13 +9,13 @@ export LOCALVERSION=$(cat /usr/local/cpanel/whostmgr/cgi/ApacheBooster/version.t
 echo "Remote version $REMOTVERSION"
 echo "Local version $LOCALVERSION"
 if [ $REMOTVERSION ==  $LOCALVERSION ]; then
-        echo "Same version. It is uptodate"
+        echo "You are using the latest version of ApacheBooster."
 else
         cd /usr/local/src
-        rm -rf /usr/local/src/apachebooster*
-        wget -c https://github.com/itseasy21/ApacheBooster/downloads/apachebooster.tar.gz
-        tar -zxf apachebooster.tar.gz
-        cd apachebooster*
+        rm -rf /usr/local/src/ApacheBooster*
+        wget https://github.com/itseasy21/ApacheBooster/archive/master.zip -O ApacheBooster.zip
+        unzip ApacheBooster.zip
+        cd ApacheBooster-master/apachebooster
         bash install.sh
         ps aux|grep varnish|awk '{print $2}'|xargs kill -9
         /etc/init.d/httpd restart
