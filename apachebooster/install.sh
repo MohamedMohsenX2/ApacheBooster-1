@@ -156,7 +156,7 @@ if [[ "$ALLINSTALLED" != 1 ]]; then
         echo "for each module name listed above."
         echo "If you are unable to install the perl modules, please contact"
         echo "ApacheBooster support for assistance."
-        echo "Support Address: prajithpalakkuda@gmail.com"
+        echo "Support Address: itseasy21@gmail.com"
         exit 1
 else
         echo ".....done"
