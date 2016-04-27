@@ -26,7 +26,7 @@ Unlike traditional servers, Nginx doesn’t rely on threads to handle requests. 
 
 1. Clone the installation folder onto your CPanel server:
 ```bash
-$> git clone https://github.com/itseasy21/ApacheBooster.git
+$> /usr/local/cpanel/3rdparty/bin/git clone https://github.com/itseasy21/ApacheBooster.git
               OR
 $> wget https://github.com/itseasy21/ApacheBooster/archive/master.zip -O ApacheBooster.zip
 $> unzip ApacheBooster.zip
